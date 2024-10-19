@@ -1,6 +1,7 @@
+package premier_support.singleton;
 
 public final class OperationMathematique {
-    private static OperationMathematique instance;
+    private static OperationMathematique instance = null;
     private float a;
     private float b;
     private float c;
@@ -58,7 +59,7 @@ public final class OperationMathematique {
     }
 
     public void affiche() {
-        System.out.println(
-                "\nJe suis une instance mes valeurs sont : a = " + this.a + ", b = " + this.a + " et a = " + this.c);
+        System.out.print(
+                "\nJe suis une instance mes valeurs sont : a = " + this.a + ", b = " + this.b + " et c = " + this.c);
     }
 }
